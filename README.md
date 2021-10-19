@@ -9,6 +9,8 @@ _To better understand how to access information on:_
 * average wait times in the CURC queues and your relative "priority"
 * the efficiency of your research workflows
 
+---
+
 ### Methods:
 
 _We will explore two groupings of tools:_
@@ -27,6 +29,7 @@ _We will explore two groupings of tools:_
   * How long are queue waits right now?
   * How many Service Units ("SUs") have I used over the past month? 
 
+---
 
 ### Tutorials:
 
@@ -112,6 +115,8 @@ This output tells me that:
 * I've used "SUs" across four different accounts over the past year
 * My usage by account varied from 3,812 SUs to 15,987 SUs
 
+---
+
 ___Who is using all of the SUs on my groups' account?___
 
 Type the command name for usage hint:
@@ -145,6 +150,7 @@ This output tells me that:
 * Five users used the account in the past 180 days.
 * Their usage ranged from 24 SUs to 84,216 SUs
 
+---
 
 ___What jobs have I run over the past few days?___
 
@@ -190,6 +196,7 @@ This output tells me that:
 * The number of cores requested ranged from 1-->8192
 * The elapsed times ranged from 0 hours to 1 hour and 48 minutes
 
+---
 
 ___What is my priority?___
 
@@ -226,8 +233,7 @@ This output tells me:
 * I have used `ucb-general` but not much. My priority is >> `, therefore I can expect lower-than-average queue waits compare to average ucb-general waits.
 
 
----
-**NOTE**
+___NOTE___
 
 What is "Priority"?  
 
@@ -342,7 +348,7 @@ Let's say you want to see how many core hours you project account has used over 
 * This will revise the graph to show CPU usage by user.  If you don't see your user of interest, you can use the _Filter_ tab at the top to find them.
 * You can change the time range of the x-axis by specifying the dates in the "Start" and "End" boxes near the top of the screen.
 
-
+---
 
 ### Final items:
 
