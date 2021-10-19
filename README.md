@@ -280,11 +280,10 @@ This output tells me that:
 
 #### Web-based tools: https://xdmod.rc.colorado.edu
 
-##### Getting started with XDMoD
 
 All CURC users have access to XDMoD (CU Boulder, CSU and RMACC). At this time, login is only supported for CU Boulder users.  Non-CU Boulder users may still query all of the statistics available to CU Boulder users, they just won't have the ability to personalize metrics. 
 
-###### Step 1: Navigate to the CURC XDMoD instance
+##### Step 1: Navigate to the CURC XDMoD instance
 
 In your browser navigate to https://xdmod.rc.colorado.edu. Upon reaching there you will see a summary screen similar to the following image.
 
@@ -292,7 +291,7 @@ In your browser navigate to https://xdmod.rc.colorado.edu. Upon reaching there y
 
 This screen provides some "quick stats" and summary plots that address some of the most common user questions, such as average wait times and recent resource usage by system (Summit or Blanca) and partition.  These metrics may be all you need. If you want to personalize metrics you can login with your CURC username and password (currently supported for CU Boulder users only).
 
-###### Step 2: Login (CU Boulder users only)
+##### Step 2: Login (CU Boulder users only)
 
 Choose the __Sign In__ option near the upper left of the screen.  This will initiate a pop-up window that gives you the option to _"Sign in with CU Boulder Research Computing"_ or _"Sign in with a local XDMoD account"_. 
 
@@ -300,7 +299,7 @@ Choose the __Sign In__ option near the upper left of the screen.  This will init
 
 Choose the option for _"Sign in with CU Boulder Research Computing"_ and enter your CURC username and password. The portal uses 2-factor authentication, so you will need to accept the Duo push to your phone to complete login.
 
-###### Step 3: Familiarize yourself with XDMoD
+##### Step 3: Familiarize yourself with XDMoD
 
 Whether or not you login, you'll start on the _"Summary"_ screen.  
 
@@ -321,7 +320,7 @@ _Notes on XDMoD Syntax_
 * a "CPU Hour" is a "core hour" (e.g., for a single job, this would be the number of `ntasks` a user specifies in their job script multipled by how long the job runs)
 * a "PI" is a project account (e.g., `ucb-general` or `ucb124_summit1`)
 
-###### Step 4: Become a pro!
+##### Step 4: Become a pro!
 
 XDMoD can query a seemingly endless number of metrics, more than could ever be described in this documentation.  To learn how to query specific metrics, customize your views, etc., please refer to the XDMoD documentation:
 
