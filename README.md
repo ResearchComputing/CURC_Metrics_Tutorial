@@ -352,7 +352,7 @@ Let's say you want to see how many core hours you project account has used over 
 
 ### Final items:
 
-* Questions?
+* Questions?  Email rc-help@colorado.edu
 
 * Please consider providing feedback on this tutorial via this brief survey: http://tinyurl.com/curc-survey18
 
