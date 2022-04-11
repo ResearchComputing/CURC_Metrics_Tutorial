@@ -5,7 +5,7 @@
 
 _To better understand how to access information on:_
 
-* your high-performance computing resource consumption
+* your high-performance computing resource consumption on Alpine, Summit and Blanca
 * average wait times in the CURC queues and your relative "priority"
 * the efficiency of your research workflows
 
@@ -46,8 +46,12 @@ or, if you _do not_ have a CURC account, ask the instructor for a temporary user
 ssh user00<NN>@tlogin1.rc.colorado.edu
 ```
 
-__Step 2__: Load the slurm module for either Summit or Blanca (whichever HPC resource you want to query metrics about):
+__Step 2__: Load the slurm module for either Alpine, Summit, or Blanca (whichever HPC resource you want to query metrics about):
 
+```bash
+module load slurm/alpine
+```
+or
 ```bash
 module load slurm/summit
 ```
@@ -98,17 +102,15 @@ Usage: suuser [userid] [days, default 30]
 Hint: suuser ralphie 15
 ```
 
-Check my usage for the last 365 days:
+Check my usage for the last 180 days:
 ```bash
-suuser monaghaa 365
+suuser monaghaa 180
 ```
 ```
-SU used by user monaghaa in the last 365 days:
+SU used by user monaghaa in the last 180 days:
 Cluster|Account|Login|Proper Name|Used|Energy|
-summit|admin|monaghaa|Andrew Monaghan|15987|0|
-summit|ucb-testing|monaghaa|Andrew Monaghan|3812|0|
-summit|tutorial1|monaghaa|Andrew Monaghan|3812|0|
-summit|ucb-general|monaghaa|Andrew Monaghan|5403|0|
+alpine|admin|monaghaa|Andrew Monaghan|15987|0|
+alpine|ucb-general|monaghaa|Andrew Monaghan|5403|0|
 ```
 
 This output tells me that:
@@ -133,22 +135,20 @@ Hint: suacct ucb-general 15
 
 Check `admin` account usage over past 180 days:
 ```bash
-suacct admin 180
+suacct admin 90
 ```
 ```
-SU used by account (allocation) admin in the last 180 days:
+SU used by account (allocation) admin in the last 90 days:
 Cluster|Account|Login|Proper Name|Used|Energy
-summit|admin|||763240|0
-summit| admin|coke4948|Corey Keasling|84216|0
-summit| admin|frahm|Joel Frahm|24|0
-summit| admin|holtat|Aaron Holt|9832|0
-summit| admin|joan5896|Jonathon Anderson|9357|0
-summit| admin|monaghaa|Andrew Monaghan|9357|0
+alpine|admin|||731256|0
+alpine| admin|crea5307|Craig Earley|12|0
+alpine| admin|monaghaa|Andrew Monaghan|978|0
+alpine| admin|rcops|User|3|0
 ```
 
 This output tells me that:
-* Five users used the account in the past 180 days.
-* Their usage ranged from 24 SUs to 84,216 SUs
+* Three users used the account in the past 90 days.
+* Their usage ranged from 3 SUs to 978 SUs
 
 ---
 
@@ -166,35 +166,28 @@ Usage: jobstats [userid] [days, default 5]
 Hint: jobstats ralphie 15
 ```
 
-Check my jobstats for the past 35 days:
+Check my jobstats for the past 6 days:
 ```bash
-jobstats monaghaa 35
+jobstats monaghaa 6
 ```
-```
-job stats for user monaghaa over past 35 days
+```bash
+job stats for user monaghaa over past 6 days
 jobid        jobname  partition    qos          account      cpus state    start-date-time     elapsed    wait
 -------------------------------------------------------------------------------------------------------------------
-8483382      sys/dash shas         normal       ucb-gener+   1    TIMEOUT  2021-09-14T09:32:09 01:00:16   0 hrs
-8487254      test.sh  shas         normal       ucb-gener+   1    COMPLETE 2021-09-14T13:21:12 00:00:02   0 hrs
-8487256      spawner- shas-inte+   interacti+   ucb-gener+   1    TIMEOUT  2021-09-14T13:22:11 12:00:22   0 hrs
-8508557      test     shas-test+   testing      ucb-gener+   2    COMPLETE 2021-09-16T10:41:45 00:00:00   0 hrs
-8508561      test     shas-test+   testing      ucb-gener+   24   CANCELLE 2021-09-22T10:07:03 00:00:00   143 hrs
-8508569      test     shas         normal       ucb-gener+   4096 FAILED   2021-09-16T10:42:46 00:00:00   0 hrs
-8508575      test     shas         normal       ucb-gener+   8192 FAILED   2021-09-16T10:43:17 00:00:00   0 hrs
-8508593      test     shas         normal       ucb-gener+   4096 CANCELLE 2021-09-16T10:44:47 00:00:00   0 hrs
-8508604      test     shas         normal       ucb-gener+   2048 CANCELLE 2021-09-16T10:45:40 00:00:00   0 hrs
-8512083      spawner- shas-inte+   interacti+   ucb-gener+   1    TIMEOUT  2021-09-16T16:55:37 04:00:23   0 hrs
-8579077      sinterac shas-test+   testing      ucb-gener+   1    COMPLETE 2021-09-24T15:26:32 00:00:47   0 hrs
-8627076      sinterac sgpu-test+   testing      ucb-gener+   24   CANCELLE 2021-10-04T12:17:30 00:10:03   0 hrs
-8672525      spawner- shas-inte+   interacti+   ucb-gener+   1    CANCELLE 2021-10-08T13:29:13 00:07:25   0 hrs
-8800741      spawner- shas-inte+   interacti+   ucb-gener+   1    CANCELLE 2021-10-19T08:11:44 01:48:38   0 hrs
+8359         sinterac amilan-ucb   normal       admin        2    CANCELLE 2022-04-05T09:54:14 00:00:00   0 hrs
+8367         sinterac amilan-ucb   normal       admin        2    CANCELLE 2022-04-05T10:35:36 00:00:00   0 hrs
+8369         sinterac amilan-ucb   normal       admin        2    CANCELLE 2022-04-05T10:35:53 00:00:00   0 hrs
+8370         sinterac amilan-ucb   normal       admin        2    CANCELLE 2022-04-05T10:36:00 00:56:08   0 hrs
+8372         run_subm amilan-ucb   normal       admin        64   COMPLETE 2022-04-05T10:41:19 00:15:19   0 hrs
+8377         sinterac aa100-ucb    normal       admin        64   CANCELLE 2022-04-05T11:32:50 02:44:50   0 hrs
+8409         sinterac amilan-ucb   normal       admin        1    TIMEOUT  2022-04-05T16:20:36 01:00:04   0 hrs
 ```
 
 This output tells me that:
-* I've run 14 jobs in the past 35 days
-* Most jobs had queue waits of < 1 hour
-* The number of cores requested ranged from 1-->8192
-* The elapsed times ranged from 0 hours to 1 hour and 48 minutes
+* I've run 7 jobs in the past 6 days
+* All jobs had queue waits of < 1 hour
+* The number of cores requested ranged from 1-->64
+* The elapsed times ranged from 0 hours to 2 hours and 44 minutes
 
 ---
 
@@ -244,6 +237,7 @@ What is "Priority"?
 	* Your time spent in the queue (jobs gain priority the longer they wait)
 	* The partition and qos you choose (this is a minor consideration on CURC systems)
 * Your "Fair Share" priority has a half life of 14 days (i.e., it recovers fully in ~1 month with zero usage)
+* _Note: Fair share priority does not apply to Blanca_
 
 ---
 
@@ -263,20 +257,20 @@ Usage: seff [Options] <Jobid>
 
 Now check the efficiency of job 8636572:
 ```bash
-seff 8636572
+seff 8372
 ```
 ```
-Job ID: 8636572
-Cluster: summit
-User/Group: ralphie/ralphiegrp
+Job ID: 8372
+Cluster: alpine
+User/Group: monaghaa/monaghaapgrp
 State: COMPLETED (exit code 0)
 Nodes: 1
-Cores per node: 24
-CPU Utilized: 04:04:05
-CPU Efficiency: 92.18% of 04:24:48 core-walltime
-Job Wall-clock time: 00:11:02
-Memory Utilized: 163.49 MB
-Memory Efficiency: 0.14% of 113.62 GB
+Cores per node: 64
+CPU Utilized: 00:15:03
+CPU Efficiency: 1.54% of 16:20:16 core-walltime
+Job Wall-clock time: 00:15:19
+Memory Utilized: 4.12 GB
+Memory Efficiency: 1.72% of 239.38 GB
 ```
 
 This output tells me that:
@@ -324,7 +318,7 @@ _** - only available to users who are logged in._
 
 _Notes on XDMoD Syntax_
 * a "CPU Hour" is a "core hour" (e.g., for a single job, this would be the number of `ntasks` a user specifies in their job script multipled by how long the job runs)
-* a "PI" is a project account (e.g., `ucb-general` or `ucb124_summit1`)
+* a "PI" is a project account (e.g., `ucb-general`)
 
 ##### Step 4: Become a pro!
 
@@ -342,7 +336,7 @@ Let's say you want to see how many core hours you project account has used over 
 
 ![](https://curc.readthedocs.io/en/latest/_images/xdmod_cpuhrs_total.png)
 
-* Choose the "PI" option.  In XDMoD syntax a "PI" is a project account (e.g., `ucb-general` or `ucb124_summit1`).  
+* Choose the "PI" option.  In XDMoD syntax a "PI" is a project account (e.g., `ucb-general`).  
 * This will revise the graph to show CPU usage for different "PIs" (accounts), showing only the accounts with the greatest usage. Your account may not be shown. To find it click the _Filter_ tab at the top and search for your project (e.g., `ucb-general`). 
 * You will now see a graph showing only core hours used by your account. To see core hours used for each user of the account, click anywhere on the line to expose the "Drill Down" menu and choose the _User_ option.
 * This will revise the graph to show CPU usage by user.  If you don't see your user of interest, you can use the _Filter_ tab at the top to find them.
