@@ -288,7 +288,7 @@ All CURC users have access to XDMoD (CU Boulder, CSU and RMACC). At this time, l
 In your browser navigate to https://xdmod.rc.colorado.edu. Upon reaching there you will see a summary screen similar to the following image.
 
 
-<img src="xdmod/xdmod_homescreen.png" width="80%" />
+<img src="xdmod/xdmod_homescreen.png" width="90%" />
 
 
 This screen provides some "quick stats" and summary plots that address some of the most common user questions, such as average wait times and recent resource usage by system (Summit or Blanca) and partition.  These metrics may be all you need. If you want to personalize metrics you can login with your CURC username and password (currently supported for CU Boulder users only).
@@ -297,7 +297,7 @@ This screen provides some "quick stats" and summary plots that address some of t
 
 Choose the __Sign In__ option near the upper left of the screen.  This will initiate a pop-up window that gives you the option to _"Sign in with CU Boulder Research Computing"_ or _"Sign in with a local XDMoD account"_. 
 
-<img src="xdmod/xdmod_sign_in.png" width="90%" />
+<img src="xdmod/xdmod_sign_in.png" width="30%" />
 
 Choose the option for _"Sign in with CU Boulder Research Computing"_ and enter your CURC username and password. The portal uses 2-factor authentication, so you will need to accept the Duo push to your phone to complete login.
 
@@ -305,7 +305,7 @@ Choose the option for _"Sign in with CU Boulder Research Computing"_ and enter y
 
 Whether or not you login, you'll start on the _"Summary"_ screen.  
 
-<img src="xdmod/xdmod_post_login.png" width="30%" />
+<img src="xdmod/xdmod_post_login.png" width="90%" />
 
 The following tabs will be available, depending on whether you are logged in
 * __Summary__ (the screen you are on when you login)
