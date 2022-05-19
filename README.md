@@ -46,7 +46,7 @@ or, if you _do not_ have a CURC account, ask the instructor for a temporary user
 ssh user00<NN>@tlogin1.rc.colorado.edu
 ```
 
-__Note__: Don't have a terminal application on your computer? No problem!  You can login to CURC via our browser-based portal, [CURC Open OnDemand](https://ondemand.rc.colorado.edu)!  Once logged in, choose the "Clusters" option and open a terminal shell for the resource you want to use (Alpine, Summit, or Blanca).  [Addtional Documentation](https://curc.readthedocs.io/en/latest/gateways/OnDemand.html)
+__Note__: _Don't have a terminal application on your computer? No problem!  You can login to CURC via our browser-based portal, [CURC Open OnDemand](https://ondemand.rc.colorado.edu)!  Once logged in, choose the "Clusters" option and open a terminal shell for the resource you want to use (Alpine, Summit, or Blanca).  [Addtional Documentation](https://curc.readthedocs.io/en/latest/gateways/OnDemand.html)_
 
 __Step 2__: Load the slurm module for either Alpine, Summit, or Blanca (whichever HPC resource you want to query metrics about):
 
