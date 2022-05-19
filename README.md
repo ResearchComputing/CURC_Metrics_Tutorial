@@ -276,8 +276,8 @@ Memory Efficiency: 1.72% of 239.38 GB
 ```
 
 This output tells me that:
-* the 24 cores reserved for this job were 92% utilized (anything > 80% is pretty good)
-* 163.49 MB RAM was used of 113.62 GB RAM reserved (0.14%). This job is "cpu bound" so the memory inefficiency is not a major issue.
+* the 64 cores reserved for this job were 1.54% utilized (anything > 80% is pretty good), so this example suggests we should analyze our workflow and make some tweaks. 
+* 4.12 GB RAM was used of 239.38 GB RAM reserved (1.72%). Most jobs (though not this one!) are "cpu bound" so the memory inefficiency is not a major issue.
 
 
 #### Web-based tools: https://xdmod.rc.colorado.edu
