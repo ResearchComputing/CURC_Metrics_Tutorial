@@ -328,6 +328,11 @@ XDMoD can query a seemingly endless number of metrics, more than could ever be d
 
 https://xdmod.rc.colorado.edu/user_manual/index.php
 
+___NOTE___
+
+You can also obtain special roles such as "PI" in XDMoD that will give you more fined-grained access to statistics. If this is of interest, please email rc-help@colorado.edu to request. 
+
+
 ##### Example use case
 
 Let's say you want to see how many core hours you project account has used over time, including the usage by user.  
