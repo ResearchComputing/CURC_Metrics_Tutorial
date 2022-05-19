@@ -18,7 +18,7 @@ _We will explore two groupings of tools:_
 
 1. __Command-line__: the "slurmtools" module
 
-  * How many SUs have I used recently? 
+  * How many Service Units ("SUs") have I used recently? 
   * Who is using all of the SUs on my group's account?
   * What jobs have I run over the past few days?
   * What is my priority?  
@@ -27,7 +27,7 @@ _We will explore two groupings of tools:_
 2. __Web-based__: https://xdmod.rc.colorado.edu
 
   * How long are queue waits right now?
-  * How many Service Units ("SUs") have I used over the past month? 
+  * How many SUs have I used over the past month? 
 
 ---
 
