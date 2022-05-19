@@ -287,7 +287,9 @@ All CURC users have access to XDMoD (CU Boulder, CSU and RMACC). At this time, l
 
 In your browser navigate to https://xdmod.rc.colorado.edu. Upon reaching there you will see a summary screen similar to the following image.
 
-![](https://curc.readthedocs.io/en/latest/_images/xdmod_homescreen.png)
+
+<img src="xdmod/xdmod_homescreen.png" width="80%" />
+
 
 This screen provides some "quick stats" and summary plots that address some of the most common user questions, such as average wait times and recent resource usage by system (Summit or Blanca) and partition.  These metrics may be all you need. If you want to personalize metrics you can login with your CURC username and password (currently supported for CU Boulder users only).
 
@@ -295,7 +297,7 @@ This screen provides some "quick stats" and summary plots that address some of t
 
 Choose the __Sign In__ option near the upper left of the screen.  This will initiate a pop-up window that gives you the option to _"Sign in with CU Boulder Research Computing"_ or _"Sign in with a local XDMoD account"_. 
 
-![](https://curc.readthedocs.io/en/latest/_images/xdmod_sign_in.png)
+<img src="xdmod/xdmod_sign_in.png" width="80%" />
 
 Choose the option for _"Sign in with CU Boulder Research Computing"_ and enter your CURC username and password. The portal uses 2-factor authentication, so you will need to accept the Duo push to your phone to complete login.
 
@@ -303,7 +305,7 @@ Choose the option for _"Sign in with CU Boulder Research Computing"_ and enter y
 
 Whether or not you login, you'll start on the _"Summary"_ screen.  
 
-![](https://curc.readthedocs.io/en/latest/_images/xdmod_post_login.png)
+<img src="xdmod/xdmod_post_login.png" width="80%" />
 
 The following tabs will be available, depending on whether you are logged in
 * __Summary__ (the screen you are on when you login)
@@ -334,11 +336,19 @@ Let's say you want to see how many core hours you project account has used over 
 * In the "Metrics and Options" menu, choose _CPU Hours: Total_ to create a graph of total CPU hours consumed over a default period. In XDMoD syntax a "CPU Hour" refers to a "core hour" (for a single job, this would be the number of `ntasks` a user chooses in their job script multipled by how long the job runs).  
 * Click anywhere on the blue line in the graph to expose the "Drill Down" menu:
 
-![](https://curc.readthedocs.io/en/latest/_images/xdmod_cpuhrs_total.png)
+<img src="xdmod/xdmod_cpuhrs_total.png" width="80%" />
 
-* Choose the "PI" option.  In XDMoD syntax a "PI" is a project account (e.g., `ucb-general`).  
+* Choose the "Resource" option.  This will break out the CPU hours by Alpine, Summit and Blanca. 
+
+<img src="xdmod/xdmod_cpuhrs_total_by_resource.png" width="80%" />
+
+* Now choose the "PI" option.  In XDMoD syntax a "PI" is a project account (e.g., `ucb-general`).  
 * This will revise the graph to show CPU usage for different "PIs" (accounts), showing only the accounts with the greatest usage. Your account may not be shown. To find it click the _Filter_ tab at the top and search for your project (e.g., `ucb-general`). 
-* You will now see a graph showing only core hours used by your account. To see core hours used for each user of the account, click anywhere on the line to expose the "Drill Down" menu and choose the _User_ option.
+* You will now see a graph showing only core hours used by your account. 
+
+<img src="xdmod/xdmod_cpuhrs_total_by_resource_and_pi.png" width="80%" />
+
+* To see core hours used for each user of the account, click anywhere on the line to expose the "Drill Down" menu and choose the _User_ option.
 * This will revise the graph to show CPU usage by user.  If you don't see your user of interest, you can use the _Filter_ tab at the top to find them.
 * You can change the time range of the x-axis by specifying the dates in the "Start" and "End" boxes near the top of the screen.
 
