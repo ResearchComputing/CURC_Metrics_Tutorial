@@ -353,3 +353,9 @@ Let's say you want to see how many core hours you project account has used over 
 * Links
   * [CURC XdMOD documentation](https://curc.readthedocs.io/en/latest/gateways/xdmod.html)
   * [XdMOD user manual](https://xdmod.rc.colorado.edu/user_manual/index.php) 
+
+* Acknowledgements
+  * Alpine is jointly funded by the University of Colorado Boulder, the University of Colorado Anschutz, Colorado State University, and the National Science Foundation.
+  * Summit is supported by the National Science Foundation (awards ACI-1532235 and ACI-1532236), the University of Colorado Boulder, and Colorado State University.
+  * Blanca is jointly funded by computing users and the University of Colorado Boulder.”
+  * XDMoD is funded under NSF grant numbers ACI 1025159 and ACI 1445806.
